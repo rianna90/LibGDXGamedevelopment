@@ -162,7 +162,6 @@
     <None Include="Info.plist" />
     <None Include="libs\ios\libgdx.a" />
     <None Include="libs\ios\ikvm\bin\libikvm-natives.a" />
-    <None Include="assets\.DS_Store" />
     <None Include="assets\data\.DS_Store" />
   </ItemGroup>
   <ItemGroup>
@@ -176,16 +175,10 @@
     <Content Include="..\my-gdx-game-android\assets\data\libgdx.png">
       <Link>data\libgdx.png</Link>
     </Content>
-    <Content Include="assets\bucket.jpg" />
-    <Content Include="assets\drop.jpg" />
     <Content Include="assets\rain.mp3" />
-    <Content Include="assets\waterdrop.wav" />
     <Content Include="assets\background.jpg" />
-    <Content Include="background.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="assets\bucket.png" />
-    <BundleResource Include="assets\drop.png" />
     <BundleResource Include="assets\data\libgdx.png" />
   </ItemGroup>
 </Project>
