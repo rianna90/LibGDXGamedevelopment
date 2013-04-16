@@ -1,6 +1,7 @@
 package com.me.mygdxgame;
 
 import com.badlogic.gdx.ApplicationListener;
+import com.badlogic.gdx.Game;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.audio.Music;
 import com.badlogic.gdx.graphics.OrthographicCamera;
@@ -8,17 +9,17 @@ import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 
 
-public class MyGdxGame implements ApplicationListener {
+public class MyGdxGame extends Game {//implements ApplicationListener {
 	private OrthographicCamera camera;
 	private SpriteBatch batch;
-	private Texture background;
+	//private Texture background;
 
 	Music rainMusic;
 	
 	@Override
 	public void create() {		
 		
-	    background = new Texture(Gdx.files.internal("background.jpg"));
+	    //background = new Texture(Gdx.files.internal("background.jpg"));
 	    rainMusic = Gdx.audio.newMusic(Gdx.files.internal("rain.mp3"));
 	      
 	    rainMusic.setLooping(true);
@@ -27,6 +28,8 @@ public class MyGdxGame implements ApplicationListener {
 	    camera = new OrthographicCamera();
 	    camera.setToOrtho(false, 800, 480);
 	    batch = new SpriteBatch();
+	    
+		Assets.load();
 	}
 
 
@@ -42,7 +45,8 @@ public class MyGdxGame implements ApplicationListener {
 		batch.setProjectionMatrix(camera.combined);
 		
 		batch.begin();
-		batch.draw(background, 0, 0, 800, 600, 0, 0, 800, 600, false, false);
+		//batch.draw(background, 0, 0, 800, 600, 0, 0, 800, 600, false, false);
+		batch.draw(Assets.background,  0, 0, 800, 600, 0, 0, 800, 600, false, false);
 		batch.end();
 		
 	}
