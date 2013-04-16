@@ -1,9 +1,17 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" />
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="Main.cs">
+    <Files>
+      <File FileName="Main.cs" Line="33" Column="1" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
-        <State selected="True" />
+        <State expanded="True">
+          <Node name="my-gdx-game-ios" expanded="True" selected="True">
+            <Node name="assets" expanded="True" />
+            <Node name="data" expanded="True" />
+          </Node>
+        </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
