@@ -38,8 +38,8 @@ public class MyGdxGame implements ApplicationListener {
 	@Override
 	public void create() {		
 		
-		dropImage = new Texture(Gdx.files.internal("drop.png"));
-	    bucketImage = new Texture(Gdx.files.internal("bucket.png"));
+		dropImage = new Texture(Gdx.files.internal("drop.jpg"));
+	    bucketImage = new Texture(Gdx.files.internal("bucket.jpg"));
 	    
 	    dropSound = Gdx.audio.newSound(Gdx.files.internal("waterdrop.wav"));
 	    rainMusic = Gdx.audio.newMusic(Gdx.files.internal("rain.mp3"));
