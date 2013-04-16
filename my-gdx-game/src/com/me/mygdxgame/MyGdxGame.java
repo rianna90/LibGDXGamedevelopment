@@ -18,7 +18,7 @@ public class MyGdxGame implements ApplicationListener {
 	@Override
 	public void create() {		
 		
-	    background = new Texture(Gdx.files.internal("background.png"));
+	    background = new Texture(Gdx.files.internal("background.jpg"));
 	    rainMusic = Gdx.audio.newMusic(Gdx.files.internal("rain.mp3"));
 	      
 	    rainMusic.setLooping(true);
