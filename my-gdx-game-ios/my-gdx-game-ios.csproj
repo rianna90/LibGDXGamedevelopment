@@ -180,8 +180,6 @@
     <Content Include="assets\drop.jpg" />
     <Content Include="assets\rain.mp3" />
     <Content Include="assets\waterdrop.wav" />
-    <Content Include="rain.mp3" />
-    <Content Include="background.png" />
     <Content Include="assets\background.jpg" />
     <Content Include="background.jpg" />
   </ItemGroup>
